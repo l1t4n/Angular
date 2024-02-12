@@ -1,0 +1,12 @@
+<button (click)="createTable()">Show Table</button>
+<button (click)="addRow()">Add Row</button>
+<button (click)="addCollumn()">Add Collumn</button>
+<section *ngIf="isCreated">
+    <section *ngFor="let collumn of collumns">
+
+    <textarea *ngFor="let row of rows">
+        {{row.text}}
+    </textarea>
+
+    </section>
+</section>
